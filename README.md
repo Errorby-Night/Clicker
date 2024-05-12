@@ -1,34 +1,43 @@
-# Click For Sound
+# <svg xmlns="http://www.w3.org/2000/svg" width="60" height="50" fill="currentColor" class="bi bi-mouse3" viewBox="0 0 16 16"><path d="M7 0q-.891.002-1.527.463c-.418.302-.717.726-.93 1.208C4.123 2.619 4 3.879 4 5.187v.504L3.382 6A2.5 2.5 0 0 0 2 8.236v2.576C2 13.659 4.22 16 7 16h2c2.78 0 5-2.342 5-5.188V5.186c0-1.13-.272-2.044-.748-2.772-.474-.726-1.13-1.235-1.849-1.59C9.981.123 8.26 0 7 0m2.5 6.099V1.232c.51.11 1.008.267 1.46.49.596.293 1.099.694 1.455 1.24.355.543.585 1.262.585 2.225v1.69zm-1-5.025v4.803L5 5.099c.006-1.242.134-2.293.457-3.024.162-.366.363-.63.602-.801C6.292 1.105 6.593 1 7 1c.468 0 .98.018 1.5.074M5 6.124 13 7.9v2.912C13 13.145 11.19 15 9 15H7c-2.19 0-4-1.855-4-4.188V8.236a1.5 1.5 0 0 1 .83-1.342l.187-.093c.01.265.024.58.047.92.062.938.19 2.12.462 2.937a.5.5 0 1 0 .948-.316c-.227-.683-.35-1.75-.413-2.688a29 29 0 0 1-.06-1.528v-.002z"/></svg> Clicker
 
-## Installation
+## Description
 
-1. First, ensure you have Python installed on your system.
+This Python script plays click and release sounds upon specific button presses. It requires click sounds in `.wav` format placed in the `sounds` folder and release sounds in `release_sounds` folder. The script can be configured to run on system startup and exited using a designated hotkey.
 
-2. If not, download and install Python from the official website.
+## Usage
 
-3. Once Python is installed, follow these steps:
-
-    - Open a terminal or command prompt.
-    
-    - Navigate to the directory where you've cloned or downloaded the MouseClickSound project.
-    
-    - Install the required dependencies by running the following command:
-        ```bash
-        cd MouseClickSound
-        pip install -r requirements.txt
-        ```
-
-4. After installing the dependencies, you have two options to make the program start at startup:
-
-    a. **Add to Startup (Windows)**:
-        - Press `Win + R` to open the Run dialog.
-        - Type `shell:startup` and press Enter. This will open the Startup folder.
-        - Copy the `.bat` file from the MouseClickSound directory to this Startup folder.
-        
-    b. **Manually Start (Any OS)**:
-        - Every time you start the computer, open a terminal or command prompt.
-        - Navigate to the MouseClickSound directory.
-        - Run the following command:
-    ```bash 
-    python main.py
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Errorby-Night/Clicker
     ```
+
+2. Install the requirements:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Place click and release sounds in the respective folders.
+
+4. Modify the `.bat` file according to file locations.
+
+5. Press `Win+R`, type `shell:startup`, and paste the `.bat` file in the startup folder.
+
+6. The script will now run on PC startup. To initiate click sounds, press the default hotkey `Ctrl+Shift+Y`, and use `` to quit.
+
+## FAQ
+
+**Q: Can I use other sound formats besides `.wav`?**
+
+A: Currently, the script only supports `.wav` format for click and release sounds.
+
+**Q: How can I change the hotkey for starting and quitting the script?**
+
+A: You can modify the script to use a different hotkey by editing the source code where the hotkey is defined.
+
+**Q: Is it possible to change the volume of the click sounds?**
+
+A: Yes, you can adjust the volume by modifying the sound files themselves or by using audio editing software.
+
+**Q: Can this script be run on operating systems other than Windows?**
+
+A: This script is specifically designed for Windows operating systems and may not work on others without modification.
