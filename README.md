@@ -1,4 +1,4 @@
-# <img width="72" height="72" src="https://img.icons8.com/parakeet-line/48/nui2.png" alt="nui2"/> Clicker
+# ![Logo](ebdg2re4cgjlw3dr95w.svg) Clicker
 
 ## Description
 
